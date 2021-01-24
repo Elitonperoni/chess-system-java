@@ -12,14 +12,14 @@ import java.util.stream.Collectors;
 
 public class ChessMatch {
 
-        private int turn;
-        private Color currentPlayer;
-        private Board board;
-        private boolean check;
-        private boolean checkMate;
+    private int turn;
+    private Color currentPlayer;
+    private Board board;
+    private boolean check;
+    private boolean checkMate;
 
-        private List<Piece> piecesOnTheBoard = new ArrayList<>();
-        private List<Piece> capturedPieces = new ArrayList<>();
+    private List<Piece> piecesOnTheBoard = new ArrayList<>();
+    private List<Piece> capturedPieces = new ArrayList<>();
 
     public ChessMatch() {
         board = new Board(8, 8);
@@ -244,7 +244,7 @@ public class ChessMatch {
         placeNewPiece('e', 2, new Pawn(board, Color.WHITE));
         placeNewPiece('f', 2, new Pawn(board, Color.WHITE));
         placeNewPiece('g', 2, new Pawn(board, Color.WHITE));
-        placeNewPiece('h', 2, new Pawn(board, Color.WHITE));
+        placeNewPiece('h', 2, new Pawn(board,Color.WHITE));
 
         placeNewPiece('a', 8, new Rook(board, Color.BLACK));
         placeNewPiece('b', 8, new Knight(board, Color.BLACK));
